@@ -10,7 +10,7 @@ read GitHubUser
 echo -n "Enter GitHubToken > "
 read GitHubToken
 
-zip deploy/templates.zip ecs-blue-green-deployment.yaml templates/*
+7z deploy/templates.zip ecs-blue-green-deployment.yaml templates/*
 cd scripts && zip scripts.zip * && cd ..
 mv scripts/scripts.zip deploy/scripts.zip
 
